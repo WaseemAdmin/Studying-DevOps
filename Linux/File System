@@ -1,0 +1,24 @@
+###Linux Storage Layout
+
+Black Storage Layout
+
+The standard linux file systems organize storage on hard disk drives. Disks are usually accessed in physical blocks, rather than a byte (8 bits) at a time. Block sizes may range from 512 bytes to 4K or larger.
+A file is represented by an inode, a kind of a serial number containing information about the actual data that makes up the file: to whom this file belongs, and where is it located on the hard disk.
+
+In Linux, files are stored on disk using **inodes** and **data blocks**.
+The filename itself does **not** contain the file data — it only points to an inode.
+
+### Example Commands
+
+```bash
+ls -i file1
+Output:
+2372244 file1
+
+The number 2372244 is the inode number of file1.
+
+stat file1
+File: file1
+Size: 13            Blocks: 8       IO Block: 4096   regular file
+Device: fd01h/64769d  Inode: 2372244   Links: 1
+Access: (0664/-rw-rw-r--)  Uid: (1000/myuser)  Gid: (1000/myuser)
