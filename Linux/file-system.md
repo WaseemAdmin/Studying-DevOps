@@ -1,19 +1,5 @@
 **[Linux Storage Layout]{.underline}**
 
-![](media/image1.png){width="6.268055555555556in"
-height="1.6194444444444445in"}
-
-![](media/image2.png){width="6.268055555555556in"
-height="4.472222222222222in"}
-
-![](media/image3.png){width="6.268055555555556in"
-height="3.497916666666667in"}
-
-![](media/image4.png){width="6.268055555555556in" height="3.5375in"}
-
-![](media/image5.png){width="6.268055555555556in"
-height="2.9944444444444445in"}
-
 **2. Agenda and Learning Goals**
 
 **This unit will cover:**
@@ -830,3 +816,4 @@ secret.txt is a directory
 secret.txt can be either a file or a directory
 
 Answer : 3
+
