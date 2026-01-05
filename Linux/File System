@@ -11,14 +11,45 @@ The filename itself does **not** contain the file data — it only points to an 
 ### Example Commands
 
 ```bash
-ls -i file1
+>>ls -i file1
 Output:
 2372244 file1
 
 The number 2372244 is the inode number of file1.
 
-stat file1
+>>stat file1
 File: file1
 Size: 13            Blocks: 8       IO Block: 4096   regular file
 Device: fd01h/64769d  Inode: 2372244   Links: 1
 Access: (0664/-rw-rw-r--)  Uid: (1000/myuser)  Gid: (1000/myuser)
+
+"On a UNIX system, everything is a file; if something is not a file, it is a process"
+
+This unit will cover:
+•	Linux file system fundamentals
+•	Your home directory
+•	Absolute and relative paths
+•	What are block devices, specifically STDOUT, STDIN, STDERR
+
+At the end of this unit you’ll be abe to:
+•	Understand Linux files better
+•	Experimenting with different file types
+•	Inspect files using common and useful commands
+•	Improve your orientation in the file system by understanding paths
+
+
+File System Fundamentals
+“On a Linux system, everything is a file; if something is not a file, it is a process.”
+In linux, under the hood, everything is actually a file. A text file is a file, a directory is a file, your keyboard is a file (one that the system reads from only), your monitor is a file (one that the system writes to only), when you want to send data over the internet, you write it to a unique file, etc.
+How could that statement be true? because there are special files that are more than just files (e.g. sockets, devices etc.).
+myuser@hostname:~$ ls -l
+total 80
+-rw-rw-r--  1 myuser     myuser   31744 Feb 21 17:56 intro Linux.doc
+-rw-rw-r--  1 myuser     myuser   41472 Feb 21 17:56 Linux.doc
+drwxrwxr-x  2 myuser     myuser   4096  Feb 25 11:50 course
+
+In the above output, the first dash (-) represents the file type. We can notice that course is a directory, since the first dash is d: drwxrwxr-x, while Linux.doc is a regular file, since it starts with -.
+Here are a few common types in Linux OS:
+
+
+
