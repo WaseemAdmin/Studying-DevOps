@@ -54,13 +54,13 @@ In the above output, the first dash (-) represents the file type. We can notice 
 Here are a few common types in Linux OS:
 
 Symbol	Meaning
--	      Regular file
-d	      Directory
-l	      Link
-c	      Character device
-s	      Socket
-p	      Named pipe
-b	      Block device
+-	Regular file
+d	Directory
+l	Link
+c	Character device
+s	Socket
+p	Named pipe
+b	Block device
 
 --------------------------------------------------------------------------------------
 
