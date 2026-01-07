@@ -9,7 +9,5 @@ Kubernetes, AWS, and GitOps using ArgoCD.
 
 ## Goals
 - Build strong DevOps foundations
-- Practice hands-on labs and projects
-- Create reusable real-world examples
 - Share knowledge publicly
 - Use this repo as a long-term reference
