@@ -10,7 +10,7 @@ The filename itself does **not** contain the file data — it only points to an 
 
 ###Example Commands
 
-```bash
+bash
 >>ls -i file1
 Output:
 2372244 file1
